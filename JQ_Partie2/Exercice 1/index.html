@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/images">
+  <title>ExerciceJquery</title>
+
+</head>
+<body>
+
+
+
+  <h1>Exercice 1 partie2</h1>
+  <h2>Au passage de la souris, agrandir une image de votre choix. </h2>
+
+ 
+<img src="assets/images/naruto.jpg" id="imageNaruto" alt="naruto">
+
+<script src="assets/js/jquery-3.2.1.js"></script>
+<script>
+
+  $(function () {
+    $('#imageNaruto').mouseover( function () {
+      $(this).css('width' , '+ =10%');
+      
+    })
+  });
+
+</script>
+
+<!-- pour aggrandir une fois et la retrauicir une fois- LE MODE ENTER CEST LA SOURIS QUI DONNE UN ACTION au passage du survol-
+<script>
+
+$(function() {
+$('#imageNaruto').mouseenter (function () {
+    $('#imageNaruto').animate({width: "80%"},'slow');
+  
+});
+
+$('#imageNaruto').mouseleave(function() {   
+  $("#imageNaruto").animate({width: "41%"},'slow');
+});
+})
+</script>
+!-->
+
+<!-- Pour aggrandir a chaque passage le mode over la souris aggrandi quelle est au dessus (le "this" = les grande ligne identifié) !:-->
+</body>
+</html>

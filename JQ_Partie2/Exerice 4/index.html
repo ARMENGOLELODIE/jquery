@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/css.css">
+  <title>ExerciceJquery</title>
+</head>
+<body>
+
+<h1>Exercice 4 partie2</h1>
+<h2>Au clic sur un bouton de couleur, modifier la couleur du texte.Au passage de la souris sur un bouton de couleur, colorer le texte. Le texte doit redevenir noir quand
+  la souris quitte le bouton</h2>
+
+
+  <p id="text">
+    Tara, originellement nommée Antarctica puis Seamaster, est une goélette française destinée à la fois à l'exploration et à la défense de l'environnement. Dans le cadre de l'Année polaire internationale, en 2007-2008, ce voilier est utilisé en Arctique par l'expédition Tara Arctic dans le but de faire des relevés permettant de mieux comprendre les changements climatiques qui s'opèrent en Arctique. En 2009, dans le cadre de l'expédition Tara Oceans, Tara parcourt les mers et les océans dans une circumnavigation de trois ans afin d'étudier le piégeage des molécules de gaz carbonique (CO2) par les micro-organismes marins comme le plancton. En avril 2016, une nouvelle expédition est montée Tara Pacific dont l'objectif est de comprendre le corail, menacé par des facteurs humains et climatiques1.
+  </p>
+
+  <button class="color green" id="green"></button>
+<button class="color red" id="red"></button>
+<button class="color blue" id="blue"></button>
+<button class="color black" id="black"></button>
+
+
+
+<script src="assets/js/jquery-3.2.1.js"></script>
+<script>
+
+//$(document).ready(function(){ $("#green").click(function(){
+//$("#text").css('color', 'green');
+//});//
+//$("#red").click(function(){
+ // $("#text").css('color', 'red');
+//});
+
+
+
+//  $("#black").click(function(){
+//    $("#text").css('color', 'black');
+//});
+
+
+//$("#blue").click(function(){
+ // $("#text").css('color', 'blue');
+//})
+
+ // })
+ //version plus simplifié :
+
+ $(function () {
+   $(".color").click(function(){
+     $("#text").css('color', this.id);
+   });
+ });
+</script>
+</body>
+
+</html>
